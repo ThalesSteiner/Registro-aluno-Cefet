@@ -1,7 +1,6 @@
 streamlit==1.36.0
 pandas
 openpyxl
-json
 boto3
 datetime
 streamlit_qrcode_scanner
