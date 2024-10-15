@@ -12,7 +12,7 @@ class AppRegistro:
 
 
     def cache_aws_credentials(self):
-        with st.popover("Open popover"):
+        with st.popover("Credencial"):
             self.aws_access_key_id = st.text_input("AWS ACCESS KEY", type="password")
             self.aws_secret_access_key = st.text_input("AWS SECRET ACCESS KEY", type="password")
         
@@ -79,7 +79,5 @@ class AppRegistro:
 
 app = AppRegistro()
 
-# Primeiro, verifica se as credenciais foram enviadas
-if app.cache_aws_credentials():
-    # Se as credenciais foram enviadas, exibe a interface principal
-    app.interface()
+if __name__ == "__main__":
+    app.cache_aws_credentials()
